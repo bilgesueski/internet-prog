@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "~/Views/Tema/_Layout.cshtml";
+}
+@using Newtonsoft.Json.Linq
+@model JObject
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div class="text-center bg-image" style=" min-width: 100%; background-size:cover;background-position:center;background-repeat:no-repeat; background-color: red; background-image: url('https://images.unsplash.com/photo-1546027658-7aa750153465?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'); height: 550px;">
+
+    </div>
+
+    <h2 style="margin:20px;">Phones</h2>
+    <div style="display:flex; flex-direction:row;flex-wrap:wrap;justify-content:space-around;width:100%;">
+        @foreach (var product in @Model["products"])
+        {
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src='https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80' alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@product["name"]</h5>
+                    <p class="card-text">Brand: @product["brand"]</p>
+                    <p class="card-text">Model: @product["model"]</p>
+                    <p class="card-text">Color: @product["color"]</p>
+                    <p class="card-text">Capacity: @product["capacity"]</p>
+                    <p class="card-text">Price: @product["price"]@product["currency"]</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</body>
+</html>
+

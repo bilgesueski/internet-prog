@@ -1,0 +1,41 @@
+﻿{
+  "products": [
+    {
+      "name": "Iphone",
+      "model": "14 Pro Max",
+      "color": "Gold",
+      "capacity": "128 GB",
+      "price": 45000,
+      "currency": "₺",
+      "brand": "apple"
+    },
+    {
+      "name": "Iphone",
+      "model": "14 Pro Max",
+      "color": "Gold",
+      "capacity": "128 GB",
+      "price": 45000,
+      "currency": "₺",
+      "brand": "apple"
+    },
+    {
+      "name": "Iphone",
+      "model": "14 Pro Max",
+      "color": "Gold",
+      "capacity": "128 GB",
+      "price": 45000,
+      "currency": "₺",
+      "brand": "apple"
+    },
+    {
+      "name": "Iphone",
+      "model": "14 Pro Max",
+      "color": "Gold",
+      "capacity": "128 GB",
+      "price": 45000,
+      "currency": "₺",
+      "brand": "apple"
+    }
+  ]
+}
+
